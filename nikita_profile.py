@@ -24,7 +24,7 @@ def stream_data():
     for word in description.split(" "):
         yield word + " "
         time.sleep(0.08)
-st.button("Stream data")
+
 st.write_stream(stream_data)
 
 # Display basic profile information
