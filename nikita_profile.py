@@ -23,9 +23,9 @@ observational data. Passionate about advancing understanding of ocean dynamics t
 def stream_data():
     for word in description.split(" "):
         yield word + " "
-        time.sleep(0.02)
-if st.button("Stream data"):
-    st.write_stream(stream_data)
+        time.sleep(0.08)
+st.button("Stream data"):
+st.write_stream(stream_data)
 
 # Display basic profile information
 st.write(f"**Field of Research:** {field}")
